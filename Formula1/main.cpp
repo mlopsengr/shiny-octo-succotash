@@ -54,4 +54,12 @@ int main() {
     // Create and initialize the grid
     std::vector<std::vector<double>> velocityGrid(nx, std::vector<double>(ny, 0.0));
     initialize(velocityGrid);
+    
+    // Perform a few time steps
+    for (int step = 0; step < 10; ++step) {
+        timeStep(velocityGrid);
+    }
+    // Print the final grid
+    printGrid(velocityGrid);
+    return 0;
 }
