@@ -9,7 +9,6 @@
 
 #include <vector>
 
-
 // Constants
 const double dt = 0.01; // Time step
 const double dx = 0.1; // Spatial step
